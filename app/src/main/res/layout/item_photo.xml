@@ -16,7 +16,7 @@
         android:orientation="horizontal"
         android:padding="8dp">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:id="@+id/item_user_avatar"
