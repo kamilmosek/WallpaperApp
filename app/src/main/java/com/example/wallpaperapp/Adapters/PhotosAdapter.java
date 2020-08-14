@@ -26,8 +26,6 @@ import butterknife.OnClick;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 
-
-
 public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder> {
     private final String TAG = PhotosAdapter.class.getSimpleName();
     private List<Photo> photos;

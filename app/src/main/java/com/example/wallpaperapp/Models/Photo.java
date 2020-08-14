@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 public class Photo {
     @SerializedName("id") //z gsona bedzie pobierac z jego i na obiek javy zmieniac
-            String id;
+     String id;
     @SerializedName("description")
     String description;
     @SerializedName("urls")
