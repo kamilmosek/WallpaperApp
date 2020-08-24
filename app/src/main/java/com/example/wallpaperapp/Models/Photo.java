@@ -3,8 +3,8 @@ package com.example.wallpaperapp.Models;
 import com.google.gson.annotations.SerializedName;
 
 public class Photo {
-    @SerializedName("id") //z gsona bedzie pobierac z jego i na obiek javy zmieniac
-     String id;
+    @SerializedName("id") //z gsona bedzie pobierac z jego i na obiekt javy zmieniac
+    String id;
     @SerializedName("description")
     String description;
     @SerializedName("urls")

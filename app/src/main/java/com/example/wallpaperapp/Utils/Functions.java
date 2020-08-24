@@ -3,6 +3,7 @@ package com.example.wallpaperapp.Utils;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
+import com.example.wallpaperapp.Fragments.CollectionFragment;
 import com.example.wallpaperapp.R;
 
 public class Functions {
@@ -13,5 +14,13 @@ public class Functions {
                 .commit();
 
 
+    }
+
+    public static void changeMainFragmentWithBack(FragmentActivity fragmentActivity, Fragment fragment){
+        fragmentActivity.getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.main_container, fragment)
+                .addToBackStack(null)
+                .commit();
     }
 }

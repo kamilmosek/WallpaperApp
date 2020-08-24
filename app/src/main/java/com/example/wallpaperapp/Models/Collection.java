@@ -12,7 +12,7 @@ public class Collection {
     @SerializedName("totalPhotos")
     private int totalPhotos;
     @SerializedName("cover Photo")
-    private Photo coverPhoto=new Photo();
+    private Photo coverPhoto = new Photo();
     @SerializedName("user")
     private User user = new User();
 
