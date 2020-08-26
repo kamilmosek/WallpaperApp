@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:fab_size="mini"
-            android:src="@drawable/ic_menu_camera"
+            android:src="@drawable/ic_check_favorite"
             app:fab_colorNormal="@color/yellow"
             app:fab_label="favorite"
             />

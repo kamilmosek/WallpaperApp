@@ -69,7 +69,7 @@ public class FullscreenPhotoActivity extends AppCompatActivity {
 
         realmController = new RealmController();
         if(realmController.isPhotoExist(photoId)){
-            fabFavorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite));
+            fabFavorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_check_favorited));
         }
 
     }
@@ -135,11 +135,11 @@ public class FullscreenPhotoActivity extends AppCompatActivity {
     public void setFabFavorite(){
         if(realmController.isPhotoExist(photo.getId())){
             realmController.deletePhoto(photo);
-            fabFavorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite));
+            fabFavorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_check_favorite));
             Toast.makeText(this, "Remove Favorite", Toast.LENGTH_SHORT).show();
         }else{
             realmController.savePhoto(photo);
-            fabFavorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite));
+            fabFavorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_check_favorited));
             Toast.makeText(this, "Favorited", Toast.LENGTH_SHORT).show();
         }
         fabMenu.close(true);
