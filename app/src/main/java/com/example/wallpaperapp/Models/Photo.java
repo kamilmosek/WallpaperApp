@@ -2,15 +2,21 @@ package com.example.wallpaperapp.Models;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Photo {
-    @SerializedName("id") //z gsona bedzie pobierac z jego i na obiekt javy zmieniac
-    String id;
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+
+public class Photo extends RealmObject {
+    @SerializedName("id")
+    @PrimaryKey
+    private String id;//z gsona bedzie pobierac z jego i na obiekt javy zmieniac
     @SerializedName("description")
-    String description;
+    private String description;
+    @SerializedName("likes")
+    private int likes;
     @SerializedName("urls")
-    PhotoUrl url = new PhotoUrl();
+    private PhotoUrl url = new PhotoUrl();
     @SerializedName("user")
-    User user = new User();
+    private User user = new User();
 
     public String getId() {
         return id;
@@ -28,12 +34,12 @@ public class Photo {
         this.description = description;
     }
 
-    public PhotoUrl getUrl() {
-        return url;
+    public int getLikes() {
+        return likes;
     }
 
-    public void setUrl(PhotoUrl url) {
-        this.url = url;
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 
     public User getUser() {
@@ -42,5 +48,13 @@ public class Photo {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public PhotoUrl getUrl() {
+        return url;
+    }
+
+    public void setUrl(PhotoUrl url) {
+        this.url = url;
     }
 }

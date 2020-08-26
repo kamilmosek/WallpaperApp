@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.wallpaperapp.Activities.FullscreenPhotoActivity;
 import com.example.wallpaperapp.Models.Photo;
 import com.example.wallpaperapp.R;
 import com.example.wallpaperapp.Utils.GlideApp;
@@ -43,10 +44,22 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder
         SquareImage photo;
         @BindView(R.id.item_user_avatar)
         CircleImageView userAvatar;
+        @BindView(R.id.item_photo_layout)
+        FrameLayout frameLayout;
 
         public ViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+        }
+
+        @OnClick(R.id.item_photo_layout)
+        public void setFrameLayout(){
+            Log.d(TAG, "dmmmmmmmmm");
+            int position = getAdapterPosition();
+            String photoId = photos.get(position).getId();
+            Intent intent = new Intent(context, FullscreenPhotoActivity.class);
+            intent.putExtra("photoId", photoId);
+            context.startActivity(intent);
         }
 
     }

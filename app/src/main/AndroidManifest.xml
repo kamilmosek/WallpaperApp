@@ -3,13 +3,16 @@
     package="com.example.wallpaperapp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
-     <application
+    <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".App.AppController"
         android:theme="@style/AppTheme">
         <activity
             android:name=".Activities.MainActivity"
@@ -20,6 +23,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Activities.FullscreenPhotoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
     </application>
 

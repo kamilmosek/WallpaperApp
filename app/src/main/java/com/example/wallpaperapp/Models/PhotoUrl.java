@@ -2,7 +2,9 @@ package com.example.wallpaperapp.Models;
 
 import com.google.gson.annotations.SerializedName;
 
-public class PhotoUrl {
+import io.realm.RealmObject;
+
+public class PhotoUrl extends RealmObject {
     @SerializedName("full")
     String full;
     @SerializedName("regular")
