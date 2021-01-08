@@ -30,7 +30,7 @@
             style="@style/TextAppearance.AppCompat.Medium"
             android:text="TTTTT"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="@color/dark_blue"
             android:outlineAmbientShadowColor="@color/white"
             android:layout_marginLeft="8dp"/>
 
