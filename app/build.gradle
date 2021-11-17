@@ -16,6 +16,8 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        //multidex
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -37,6 +39,11 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.3.0'
     implementation 'androidx.navigation:navigation-ui:2.3.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    //aby działało
+    implementation 'com.android.support:multidex:1.0.3'
+    //ads
+    implementation 'com.google.android.gms:play-services-ads:20.4.0'
+
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     //okHTTP

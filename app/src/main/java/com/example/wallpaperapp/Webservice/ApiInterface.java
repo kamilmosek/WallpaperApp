@@ -13,7 +13,8 @@ public interface ApiInterface {
     @GET("photos")
     Call<List<Photo>> getPhotos();
 
-    @GET("collections/featured")
+    //@GET("collections/featured")
+    @GET("collections")
     Call<List<Collection>> getCollections();
 
     @GET("collections/{id}")

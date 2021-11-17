@@ -50,7 +50,7 @@ public class CollectionsFragment extends Fragment {
         adapter = new CollectionsAdapter(getActivity(), collections);
         gridView.setAdapter(adapter);
         getCollections();
-        showProgressBar(true);
+        showProgressBar( true);
         return view;
     }
 

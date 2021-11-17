@@ -28,6 +28,13 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
+
+                <!-- add-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3112577677702451~9992120728"/>
+
+
     </application>
 
 </manifest>
