@@ -76,9 +76,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_photos) {
             PhotosFragment photosFragment = new PhotosFragment();
             Functions.changeMainFragment(MainActivity.this, photosFragment);
-        } else if (id == R.id.nav_collections) {
-            CollectionsFragment collectionsFragment = new CollectionsFragment();
-            Functions.changeMainFragment(MainActivity.this, collectionsFragment);
+//        } else if (id == R.id.nav_collections) {
+//            CollectionsFragment collectionsFragment = new CollectionsFragment();
+//            Functions.changeMainFragment(MainActivity.this, collectionsFragment);
         } else if (id == R.id.nav_favorite) {
             FavoriteFragment favoriteFragment = new FavoriteFragment();
             Functions.changeMainFragment(MainActivity.this, favoriteFragment);
