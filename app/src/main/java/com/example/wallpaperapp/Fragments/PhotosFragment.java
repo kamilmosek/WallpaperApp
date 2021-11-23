@@ -70,7 +70,7 @@ public class PhotosFragment extends Fragment {
                }else{
                    Log.e(TAG,"fail"+response.message());
                }
-//               showProgressBar(false);
+               showProgressBar(false);
             }
 
             @Override
